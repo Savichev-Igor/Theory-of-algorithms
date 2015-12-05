@@ -61,6 +61,7 @@
 \newtheorem{cor}[thm]{Следствие}
 \newtheorem{conj}[thm]{Предположение}
 \newtheorem{rmk}[thm]{Замечание}
+\newtheorem{proof-rus}[thm]{Доказательство}
 \newtheorem{obs}[thm]{Наблюдение}
 \newtheorem{dfn}[thm]{Определение}
 \theoremstyle{definition}
@@ -109,9 +110,9 @@
         Если $\exists k \sum^kp = \Pi^kp \Rightarrow \sum^{k+1}p = \sum^kp$, то есть, если эти классы равны, то полиномиальная иерархия коллапсирует
         и дальше никаких классов нет.
     \end{state}
-    \begin{proof}
+    \begin{proof-rus}
         Без доказательства.
-    \end{proof}
+    \end{proof-rus}
 \end{frame}
 
 \begin{frame}
@@ -137,9 +138,9 @@
         Если $\exists k \sum^kp = \Pi^kp \Rightarrow PH = \sum^kp$, \\
         где $PH = \cup_k\sum^kp\cup \Pi^kp$.
     \end{state}
-    \begin{proof}
+    \begin{proof-rus}
         Без доказательства.
-    \end{proof}
+    \end{proof-rus}
     Суть этого утверждения в том, что все эти вопросы о равенстве классов
     $P$ и $NP$, они в этой иерархии до самого верха, то есть, если $P$ = $NP$
     вся иерархия сваливается в $P$. \\
@@ -217,10 +218,10 @@
     \begin{rmk}
         $P$ - это те алгоритмы, которые работают за полиномиальное время. \\
     \end{rmk}
-    \begin{proof}
+    \begin{proof-rus}
         Сложно за полиномиальное время "изгадить" больше ячеек памяти, чем полином. \\
         Поэтому очевидно, что $P \subseteq PSACE$.
-    \end{proof}
+    \end{proof-rus}
 \end{frame}
 
 \begin{frame}
@@ -228,10 +229,10 @@
     \begin{rmk}
         $DTIME(f) \subseteq DPSACE(F)$.
     \end{rmk}
-    \begin{proof}
+    \begin{proof-rus}
         Нужно просто понять, что если вы работаете $k$ шагов, то больше чем $k$ ячеек
         вам не понадобится. \\
-    \end{proof}
+    \end{proof-rus}
 \end{frame}
 
 \begin{frame}
@@ -239,7 +240,7 @@
     \begin{rmk}
          $PSPACE \subseteq EXPTIME$.
     \end{rmk}
-    \begin{proof}
+    \begin{proof-rus}
         У нас есть некоторое ограничение на работу памяти. \\
         Пусть мы берём в нашу МТ слово $w$, а это значит, что мы можем использовать места не более чем $|w|^k$, где $k$ - некоторое число. \\
         Теперь нужно вспомнить, что такое конфигурация МТ ?
@@ -248,7 +249,7 @@
         2. Состояния, которых конечное число. \\
         3. И две позиции. \\
         А всего таких конфигураций может быть очень много.
-    \end{proof}
+    \end{proof-rus}
 \end{frame}
 
 \begin{frame}
@@ -271,7 +272,7 @@
         $PSPACE = NPSPACE$
     \end{thm}
     \small
-    \begin{proof}
+    \begin{proof-rus}
         Пусть $\exists$ алгоритм поиска пути в графе $G$ из $s$ в $t$, занимающий
         $log^2(G)$ (кол-ва вершин) памяти. \\
         Мы имеем алгоритм $A(s, t, k)$ - $\exists$ путь из $s$ в $t$ из $k$ вершин. \\
@@ -283,7 +284,7 @@
         То есть, когда мы ищем путь из $s$ в $t$, мы пытаемся проверить, что для какой-то
         вершины в графе есть обе половины пути. \\
         А когда мы найдём эту вершину, то это и будет означать, что существует такой путь.
-    \end{proof}
+    \end{proof-rus}
 \end{frame}
 
 \begin{frame}
